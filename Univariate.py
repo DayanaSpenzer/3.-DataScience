@@ -1,3 +1,6 @@
+import pandas as pd
+import numpy as np
+
 class Univariate():
     def QuanQual(dataset):
         quan=[]
@@ -6,7 +9,7 @@ class Univariate():
             if dataset[columnName].dtype=='O':
                 qual.append(columnName)
             else:
-                quan.append(columnName)
+                    quan.append(columnName)
         return quan, qual
     
     def UniVariate(dataset,quan):
